@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+$mainColor: #47b3dd;
+$textColor: #FFF;
+
+header {
+  background-color: $mainColor;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+
+  nav{
+    a{
+      text-decoration: none;
+      color: $textColor;
+      font-size: 40px;
+    }
+  }
+}
+
+.loc-img {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  }
+
+.active{
+  background-color: black;
+}
+
+.img-logo{
+height: 130px;
+  width: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.img-about-main{
+  height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+.container-main-about{
+  position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text-main {
+  position: absolute;
+  top: 35%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  font-size:larger;
+}
+
+
+.text-about {
+  position: absolute;
+  top: 5%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+.text-about p {
+color: black;
+font-family: monospace;
+}
+
+.container-product-card{
+  text-align: center;
+  background-image: url("https://www.vermontvacation.com/~/media/images/package%20images/categories/traveltrademountainstitle.ashx");
+  
+}
+
+.title-product-card{
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.text-product-card{
+  display: inline-block;
+  margin-right: 5%;
+  width: 280px;
+  background-color: rgba(255, 255, 255, 0.4);
+  vertical-align: text-bottom;
+  
+}
+
+.text-product-card p{
+
+  color: red;
+  word-break: normal
+}
+
+.img-product-card{
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.buttons-inc-dec{
+  background-color: #47b3dd;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  border-radius: 50%;
+  width: 15%;
+  height: 12%;
+}
+
+.button-order {
+  background-color: #47b3dd;; /* Green */
+  border: 2px black solid;
+  color: white;
+  padding: 4px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover{background-color:rgb(132, 189, 206);}
+
+button:active{background-color:green;}
